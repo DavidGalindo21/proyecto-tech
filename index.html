@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore - Productos Electrónicos</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">
+          <i class="bi bi-cpu"></i> TechStore
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Inicio Section -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-overlay">
+        <div class="container">
+          <div class="row align-items-center min-vh-100">
+            <div class="col-lg-8 mx-auto text-center text-white">
+              <h1 class="display-3 fw-bold mb-4">Bienvenido a TechStore</h1>
+              <p class="lead mb-4">Tu destino confiable para productos electrónicos de última generación</p>
+              <div class="hero-values mb-5">
+                <div class="row g-4">
+                  <div class="col-md-4">
+                    <div class="value-card">
+                      <i class="bi bi-shield-check display-4 mb-3"></i>
+                      <h4>Confianza</h4>
+                      <p>Productos garantizados y originales</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="value-card">
+                      <i class="bi bi-lightning-charge display-4 mb-3"></i>
+                      <h4>Innovación</h4>
+                      <p>Tecnología de vanguardia</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="value-card">
+                      <i class="bi bi-heart display-4 mb-3"></i>
+                      <h4>Servicio</h4>
+                      <p>Atención personalizada 24/7</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#productos" class="btn btn-primary btn-lg me-2">Ver Productos</a>
+              <a href="#contacto" class="btn btn-outline-light btn-lg">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiénes Somos Section -->
+    <section id="quienes-somos" class="py-5">
+      <div class="container py-5">
+        <div class="row mb-5">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="display-4 fw-bold mb-3">Quiénes Somos</h2>
+            <p class="lead text-muted">Líderes en tecnología desde 2015</p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4">
+            <div class="about-card h-100">
+              <h3 class="mb-3"><i class="bi bi-book text-primary"></i> Nuestra Historia</h3>
+              <p>Fundada en 2015, TechStore nació con la visión de democratizar el acceso a la tecnología de calidad. Durante más de 8 años, hemos servido a miles de clientes satisfechos, convirtiéndonos en uno de los distribuidores más confiables de productos electrónicos en la región.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="about-card h-100">
+              <h3 class="mb-3"><i class="bi bi-bullseye text-primary"></i> Misión</h3>
+              <p>Proporcionar productos electrónicos de alta calidad a precios competitivos, ofreciendo una experiencia de compra excepcional y asesoramiento técnico profesional para satisfacer las necesidades tecnológicas de nuestros clientes.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="about-card h-100">
+              <h3 class="mb-3"><i class="bi bi-eye text-primary"></i> Visión</h3>
+              <p>Ser la empresa líder en comercialización de productos electrónicos a nivel nacional, reconocida por la excelencia en el servicio, innovación constante y compromiso con la satisfacción total de nuestros clientes.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="about-card h-100">
+              <h3 class="mb-3"><i class="bi bi-people text-primary"></i> Nuestro Equipo</h3>
+              <p>Contamos con un equipo de más de 50 profesionales especializados en tecnología, ventas y servicio al cliente. Cada miembro está capacitado para brindar asesoramiento experto y garantizar que encuentres el producto perfecto para tus necesidades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos Section -->
+    <section id="productos" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="row mb-5">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="display-4 fw-bold mb-3">Nuestros Productos</h2>
+            <p class="lead text-muted">Catálogo completo de tecnología</p>
+          </div>
+        </div>
+
+        <!-- Filtros de categorías -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+              <button class="btn btn-outline-primary filter-btn active" data-category="all">Todos</button>
+              <button class="btn btn-outline-primary filter-btn" data-category="celulares">Celulares</button>
+              <button class="btn btn-outline-primary filter-btn" data-category="laptops">Laptops</button>
+              <button class="btn btn-outline-primary filter-btn" data-category="consolas">Consolas</button>
+              <button class="btn btn-outline-primary filter-btn" data-category="pc">PC Gaming</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de productos -->
+        <div id="productos-grid" class="row g-4">
+          <!-- Los productos se cargarán dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="py-5">
+      <div class="container py-5">
+        <div class="row mb-5">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="display-4 fw-bold mb-3">Galería</h2>
+            <p class="lead text-muted">Nuestras instalaciones y productos</p>
+          </div>
+        </div>
+
+        <div class="row g-4" id="galeria-grid">
+          <!-- La galería se cargará dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="row mb-5">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="display-4 fw-bold mb-3">Contacto</h2>
+            <p class="lead text-muted">Estamos aquí para ayudarte</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="contact-info-card h-100">
+              <h3 class="mb-4">Información de Contacto</h3>
+
+              <div class="contact-item mb-4">
+                <i class="bi bi-geo-alt-fill text-primary"></i>
+                <div>
+                  <h5>Dirección</h5>
+                  <p>Av. Principal 123, Centro Comercial TechPlaza, Local 45</p>
+                </div>
+              </div>
+
+              <div class="contact-item mb-4">
+                <i class="bi bi-telephone-fill text-primary"></i>
+                <div>
+                  <h5>Teléfono</h5>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+
+              <div class="contact-item mb-4">
+                <i class="bi bi-envelope-fill text-primary"></i>
+                <div>
+                  <h5>Email</h5>
+                  <p>info@techstore.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item mb-4">
+                <i class="bi bi-clock-fill text-primary"></i>
+                <div>
+                  <h5>Horario</h5>
+                  <p>Lunes a Viernes: 9:00 AM - 7:00 PM<br>Sábados: 10:00 AM - 6:00 PM</p>
+                </div>
+              </div>
+
+              <div class="social-links mt-4">
+                <h5 class="mb-3">Síguenos</h5>
+                <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+              </div>
+
+              <!-- Mapa -->
+              <div class="mt-4">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093743!2d144.9537353153167!3d-37.81720997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sau!4v1635832138348!5m2!1sen!2sau"
+                  width="100%"
+                  height="250"
+                  style="border:0; border-radius: 10px;"
+                  allowfullscreen=""
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-form-card h-100">
+              <h3 class="mb-4">Envíanos un Mensaje</h3>
+              <form id="contact-form">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre Completo</label>
+                  <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" id="telefono">
+                </div>
+                <div class="mb-3">
+                  <label for="asunto" class="form-label">Asunto</label>
+                  <input type="text" class="form-control" id="asunto" required>
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                  <i class="bi bi-send"></i> Enviar Mensaje
+                </button>
+              </form>
+              <div id="form-message" class="mt-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0">&copy; 2024 TechStore. Todos los derechos reservados.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-white text-decoration-none me-3">Términos y Condiciones</a>
+            <a href="#" class="text-white text-decoration-none">Política de Privacidad</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
