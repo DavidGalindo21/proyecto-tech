@@ -1,12 +1,11 @@
-
 const productos = [
   {
     id: 1,
     categoria: 'celulares',
     nombre: 'iPhone 15 Pro',
     descripcion: 'El smartphone más avanzado de Apple con chip A17 Pro',
-    precio: '$999',
-    imagen: 'https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg',
+    precio: '$19,900',
+    imagen: 'https://media.gq.com.mx/photos/634d8cca740e69985e3e0cb5/master/w_1600%2Cc_limit/IPHONE%252014.jpg',
     specs: ['6.1" Super Retina XDR', '256GB', 'Cámara 48MP', '5G']
   },
   {
@@ -14,8 +13,8 @@ const productos = [
     categoria: 'celulares',
     nombre: 'Samsung Galaxy S24',
     descripcion: 'Potencia y elegancia en un solo dispositivo',
-    precio: '$899',
-    imagen: 'https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg',
+    precio: '$9,200',
+    imagen: 'https://images.samsung.com/is/image/samsung/assets/mx/smartphones/galaxy-s24/buy/S24-Color-Cobalt_Violet_PC_0527_final.jpg',
     specs: ['6.2" Dynamic AMOLED', '128GB', 'Cámara 50MP', '5G']
   },
   {
@@ -23,8 +22,8 @@ const productos = [
     categoria: 'laptops',
     nombre: 'MacBook Pro 16"',
     descripcion: 'Potencia profesional para creativos y desarrolladores',
-    precio: '$2,499',
-    imagen: 'https://images.pexels.com/photos/18105/pexels-photo.jpg',
+    precio: '$57,600',
+    imagen: 'https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111932_sp809-mbp16touch-silver-2019.jpeg',
     specs: ['M3 Pro', '16GB RAM', '512GB SSD', 'Liquid Retina XDR']
   },
   {
@@ -32,8 +31,8 @@ const productos = [
     categoria: 'laptops',
     nombre: 'Dell XPS 15',
     descripcion: 'Laptop premium con rendimiento excepcional',
-    precio: '$1,799',
-    imagen: 'https://images.pexels.com/photos/7974/pexels-photo.jpg',
+    precio: '$27,000',
+    imagen: 'https://m.media-amazon.com/images/I/717Lo8oZaAL.jpg',
     specs: ['Intel i7 13th Gen', '16GB RAM', '1TB SSD', '15.6" OLED']
   },
   {
@@ -41,8 +40,8 @@ const productos = [
     categoria: 'consolas',
     nombre: 'PlayStation 5',
     descripcion: 'La experiencia de juego definitiva',
-    precio: '$499',
-    imagen: 'https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg',
+    precio: '$14,780',
+    imagen: 'https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$',
     specs: ['4K Gaming', '825GB SSD', 'Ray Tracing', 'DualSense Controller']
   },
   {
@@ -50,8 +49,8 @@ const productos = [
     categoria: 'consolas',
     nombre: 'Xbox Series X',
     descripcion: 'La consola más potente de Xbox',
-    precio: '$499',
-    imagen: 'https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg',
+    precio: '$11,800',
+    imagen: 'https://i5.walmartimages.com.mx/samsmx/images/product-images/img_large/981028738l.jpg',
     specs: ['4K Gaming', '1TB SSD', '120fps', 'Quick Resume']
   },
   {
@@ -59,8 +58,8 @@ const productos = [
     categoria: 'pc',
     nombre: 'Alienware Aurora R15',
     descripcion: 'PC Gaming de alto rendimiento',
-    precio: '$2,299',
-    imagen: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg',
+    precio: '$65,850',
+    imagen: 'https://m.media-amazon.com/images/I/610nId7ApAL._AC_UF894,1000_QL80_.jpg',
     specs: ['RTX 4080', 'Intel i9 13th Gen', '32GB RAM', '2TB SSD']
   },
   {
@@ -68,8 +67,8 @@ const productos = [
     categoria: 'pc',
     nombre: 'ROG Strix G15',
     descripcion: 'Torre gaming con diseño futurista',
-    precio: '$1,899',
-    imagen: 'https://images.pexels.com/photos/7517396/pexels-photo-7517396.jpeg',
+    precio: '$28,600',
+    imagen: 'https://m.media-amazon.com/images/I/81fZmxBbQgL._AC_SL1500_.jpg',
     specs: ['RTX 4070', 'AMD Ryzen 9', '16GB RAM', '1TB SSD']
   },
   {
@@ -77,8 +76,8 @@ const productos = [
     categoria: 'celulares',
     nombre: 'Google Pixel 8 Pro',
     descripcion: 'IA avanzada y fotografía excepcional',
-    precio: '$899',
-    imagen: 'https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg',
+    precio: '$10,305',
+    imagen: 'https://http2.mlstatic.com/D_NQ_NP_840255-MLA95708279620_102025-O.webp',
     specs: ['6.7" LTPO OLED', '256GB', 'Cámara 50MP', 'Google Tensor G3']
   },
   {
@@ -86,8 +85,8 @@ const productos = [
     categoria: 'laptops',
     nombre: 'ASUS ROG Zephyrus',
     descripcion: 'Laptop gaming ultradelgada',
-    precio: '$2,199',
-    imagen: 'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg',
+    precio: '$33,900',
+    imagen: 'https://dlcdnwebimgs.asus.com/gain/5C8D822E-6BE1-448F-9819-2CF68A90B368/w717/h525',
     specs: ['RTX 4060', 'AMD Ryzen 9', '16GB RAM', '1TB SSD']
   },
   {
@@ -95,8 +94,8 @@ const productos = [
     categoria: 'consolas',
     nombre: 'Nintendo Switch OLED',
     descripcion: 'Juega en casa o donde quieras',
-    precio: '$349',
-    imagen: 'https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg',
+    precio: '$6,000',
+    imagen: 'https://resources.claroshop.com/medios-plazavip/t1/1728404886Proyectonuevo7png',
     specs: ['7" OLED', '64GB', 'Joy-Con', 'Dock incluido']
   },
   {
@@ -104,8 +103,8 @@ const productos = [
     categoria: 'pc',
     nombre: 'HP Omen 45L',
     descripcion: 'Potencia sin límites para gamers',
-    precio: '$2,599',
-    imagen: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
+    precio: '$65,550',
+    imagen: 'https://kaas.hpcloud.hp.com/PROD/v2/renderbinary/5911297/5038347/con-win-dt-p-omen-45l-gt22-0007ns-product-specifications/articuno-desktop',
     specs: ['RTX 4090', 'Intel i9', '64GB RAM', '2TB SSD']
   }
 ];
@@ -162,8 +161,9 @@ function renderProductos(categoria = 'all') {
           <ul class="product-specs">
             ${producto.specs.map(spec => `<li><i class="bi bi-check-circle-fill"></i>${spec}</li>`).join('')}
           </ul>
-          <div class="product-price">${producto.precio}</div>
-          <button class="btn btn-primary btn-product">
+          <div class="product-price">${producto.precio} MXN</div>
+          <!-- botón corregido: quitar onclick y usar event delegation -->
+          <button class="btn btn-primary add-to-cart" data-id="${producto.id}">
             <i class="bi bi-cart-plus"></i> Agregar al Carrito
           </button>
         </div>
@@ -198,33 +198,6 @@ function setupFilters() {
   });
 }
 
-function setupContactForm() {
-  const form = document.getElementById('contact-form');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
-    const telefono = document.getElementById('telefono').value;
-    const asunto = document.getElementById('asunto').value;
-    const mensaje = document.getElementById('mensaje').value;
-
-    const formMessage = document.getElementById('form-message');
-    formMessage.innerHTML = `
-      <div class="alert alert-success">
-        <i class="bi bi-check-circle-fill me-2"></i>
-        <strong>¡Mensaje enviado con éxito!</strong> Nos pondremos en contacto contigo pronto.
-      </div>
-    `;
-
-    form.reset();
-
-    setTimeout(() => {
-      formMessage.innerHTML = '';
-    }, 5000);
-  });
-}
-
 function setupSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -251,6 +224,153 @@ function setupNavbarScroll() {
   });
 }
 
+/* --- Carrito (persistencia en localStorage) --- */
+const CART_KEY = 'smartmarket_cart';
+
+function getCart() {
+  try {
+    return JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+  } catch {
+    return [];
+  }
+}
+function saveCart(cart) {
+  localStorage.setItem(CART_KEY, JSON.stringify(cart));
+}
+
+// Guard para evitar errores si setupContactForm no está definida
+if (typeof setupContactForm !== 'function') {
+  window.setupContactForm = () => {};
+}
+
+function formatCurrency(v) {
+  // Mostrar en pesos mexicanos
+  return Number(v).toLocaleString('es-MX', { style: 'currency', currency: 'MXN' });
+}
+
+/* convierte cadenas como "$19,900" -> 19900
+   estrategia simple: eliminar símbolos y separadores de miles (comas) */
+function parsePrice(precioStr) {
+  if (typeof precioStr === 'number') return precioStr;
+  let s = String(precioStr || '');
+  // quitar todo menos dígitos y separadores . y ,
+  s = s.replace(/[^0-9.,-]/g, '');
+  // si hay comas usadas como separador de miles, las eliminamos
+  // (en tu dataset las comas son miles, no decimales)
+  s = s.replace(/,/g, '');
+  // ahora parseFloat
+  return parseFloat(s) || 0;
+}
+
+function updateQuantity(id, qty) {
+  const cart = getCart()
+    .map(item => (Number(item.id) === Number(id) ? { ...item, qty: Math.max(0, qty) } : item))
+    .filter(i => i.qty > 0);
+  saveCart(cart);
+  renderCart();
+}
+
+function removeFromCart(id) {
+  const cart = getCart().filter(item => Number(item.id) !== Number(id));
+  saveCart(cart);
+  renderCart();
+}
+
+function clearCart() {
+  localStorage.removeItem(CART_KEY);
+  renderCart();
+}
+
+function renderCart() {
+  const cart = getCart();
+  const container = document.getElementById('cart-items');
+  const totalEl = document.getElementById('cart-total');
+  const badge = document.getElementById('cart-count');
+  if (!container || !totalEl || !badge) return;
+
+  container.innerHTML = '';
+  let total = 0;
+  let count = 0;
+
+  if (cart.length === 0) {
+    container.innerHTML = '<div class="text-center text-muted">Tu carrito está vacío</div>';
+  } else {
+    cart.forEach(item => {
+      total += item.price * item.qty;
+      count += item.qty;
+
+      const itemEl = document.createElement('div');
+      itemEl.className = 'list-group-item d-flex align-items-center';
+      itemEl.innerHTML = `
+        <div class="flex-grow-1">
+          <div class="fw-semibold">${item.title}</div>
+          <small class="text-muted">${formatCurrency(item.price)} x ${item.qty} = ${formatCurrency(item.price * item.qty)} MXN</small>
+        </div>
+        <div class="ms-3 d-flex align-items-center gap-2">
+          <input type="number" min="1" value="${item.qty}" data-id="${item.id}" class="form-control form-control-sm cart-qty" style="width:70px">
+          <button class="btn btn-sm btn-outline-danger remove-item" data-id="${item.id}" title="Eliminar"><i class="bi bi-trash"></i></button>
+        </div>
+      `;
+      container.appendChild(itemEl);
+    });
+  }
+
+  totalEl.textContent = formatCurrency(total);
+  badge.textContent = count;
+}
+
+function findProduct(id) {
+  return productos.find(p => Number(p.id) === Number(id)) || null;
+}
+
+function addToCart(id, qty = 1) {
+  const prod = findProduct(id);
+  if (!prod) return;
+  const cart = getCart();
+  const existing = cart.find(item => Number(item.id) === Number(prod.id));
+  const priceNum = parsePrice(prod.precio);
+  if (existing) {
+    existing.qty = Math.max(1, existing.qty + qty);
+  } else {
+    cart.push({ id: prod.id, title: prod.nombre, price: priceNum, qty: Math.max(1, qty) });
+  }
+  saveCart(cart);
+  renderCart();
+
+  // mostrar SweetAlert2 al agregar
+  if (typeof alerta === 'function') {
+    alerta(prod.nombre);
+  }
+}
+
+/* Delegación para botones "Agregar al carrito", eliminación y cambio de cantidad */
+document.addEventListener('click', (e) => {
+  // Botón Agregar al carrito
+  if (e.target.closest('.add-to-cart')) {
+    const addBtn = e.target.closest('.add-to-cart');
+    const id = addBtn.dataset.id;
+    addToCart(id, 1);
+    return;
+  }
+
+  // Botón Eliminar del carrito
+  if (e.target.closest('.remove-item')) {
+    const removeBtn = e.target.closest('.remove-item');
+    const id = removeBtn.dataset.id;
+    removeFromCart(id);
+    return;
+  }
+});
+
+document.addEventListener('change', (e) => {
+  if (e.target.matches('.cart-qty')) {
+    const id = e.target.dataset.id;
+    const qty = parseInt(e.target.value, 10) || 1;
+    updateQuantity(id, qty);
+  }
+});
+
+/* Inicialización: renderiza carrito y conecta botones offcanvas */
 document.addEventListener('DOMContentLoaded', () => {
   renderProductos();
   renderGaleria();
@@ -258,4 +378,68 @@ document.addEventListener('DOMContentLoaded', () => {
   setupContactForm();
   setupSmoothScroll();
   setupNavbarScroll();
+  renderCart();
+
+  const clearBtn = document.getElementById('clear-cart-btn');
+  if (clearBtn) clearBtn.addEventListener('click', vaciar);
+
+  const checkoutBtn = document.getElementById('checkout-btn');
+  if (checkoutBtn) checkoutBtn.addEventListener('click', () => {
+    const cart = getCart();
+    if (cart.length === 0) {
+      Swal.fire({
+        title: "Carrito vacío",
+        text: "Agrega productos antes de realizar la compra",
+        icon: "warning"
+      });
+      return;
+    }
+    confirmarVenta();
+  });
 });
+
+function alerta(nombre) {
+  Swal.fire({
+  title: "Agregado al carrito",
+  text: "Has agregado el producto " + nombre + " al carrito de compras.",
+  icon: "success"
+});
+}
+
+function vaciar(){
+  Swal.fire({
+  title: "¿Seguro que quieres vaciar el carrito?",
+  showCancelButton: true,
+  confirmButtonText: "Sí, vaciar",
+  cancelButtonText: "Cancelar",
+  icon: "question"
+}).then((result) => {
+  if (result.isConfirmed) {
+    clearCart();
+    Swal.fire({
+      title: "Carrito vaciado",
+      text: "El carrito de compras ha sido vaciado.",
+      icon: "success"
+    });
+  }
+})
+}
+
+function confirmarVenta(){
+  Swal.fire({
+  title: "¿Confirmar compra?",
+  showCancelButton: true,
+  confirmButtonText: "Sí, comprar",
+  cancelButtonText: "Cancelar",
+  icon: "question"
+}).then((result) => {
+  if (result.isConfirmed) {
+    clearCart();
+    Swal.fire({
+      title: "Compra realizada",
+      text: "Gracias por tu compra.",
+      icon: "success"
+    });
+  }
+})
+}
