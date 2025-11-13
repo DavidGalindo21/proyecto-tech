@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./hero.css">
   </head>
   <body>
-    <!-- Navbar -->
+   <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#inicio">
@@ -52,45 +53,52 @@
       </div>
     </nav>
 
-    <!-- Inicio Section -->
-    <section id="inicio" class="hero-section">
-      <div class="hero-overlay">
-        <div class="container">
-          <div class="row align-items-center min-vh-100">
-            <div class="col-lg-8 mx-auto text-center text-white">
-              <h1 class="display-3 fw-bold mb-4">Bienvenido a SmartMarket</h1>
-              <p class="lead mb-4">Tu destino confiable para productos electrónicos de última generación</p>
-              <div class="hero-values mb-5">
-                <div class="row g-4">
-                  <div class="col-md-4">
-                    <div class="value-card">
-                      <i class="bi bi-shield-check display-4 mb-3"></i>
-                      <h4>Confianza</h4>
-                      <p>Productos garantizados y originales</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="value-card">
-                      <i class="bi bi-lightning-charge display-4 mb-3"></i>
-                      <h4>Innovación</h4>
-                      <p>Tecnología de vanguardia</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="value-card">
-                      <i class="bi bi-heart display-4 mb-3"></i>
-                      <h4>Servicio</h4>
-                      <p>Atención personalizada 24/7</p>
-                    </div>
-                  </div>
+    <!-- Inicio Section / Hero -->
+    <section id="inicio" class="hero">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-custom">
+                    <span class="pulse-dot"></span>
+                    Nuevos productos disponibles
                 </div>
-              </div>
-              <a href="#productos" class="btn btn-primary btn-lg me-2">Ver Productos</a>
-              <a href="#contacto" class="btn btn-outline-light btn-lg">Contáctanos</a>
+                
+                <h1>
+                    La mejor tecnología<br>
+                    <span class="gradient-text">al mejor precio</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Descubre nuestra colección de smartphones, consolas, laptops y más. 
+                    Envío gratis en compras superiores a $10,000.
+                </p>
+                
+                <div class="buttons">
+                    <button class="primary-btn" onclick="document.getElementById('productos').scrollIntoView({behavior: 'smooth'})">Ver productos</button>
+                </div>
             </div>
-          </div>
+
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&h=900&fit=crop" alt="Productos electrónicos premium">
+                </div>
+                
+                <div class="floating-card card1">
+                    <div class="card-icon">📱</div>
+                    <div class="card-title">Smartphones</div>
+                    <div class="card-subtitle">Desde $5,000</div>
+                </div>
+                
+                <div class="floating-card card2">
+                    <div class="card-icon">🎮</div>
+                    <div class="card-title">Consolas Gaming</div>
+                    <div class="card-subtitle">Stock disponible</div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Quiénes Somos Section -->
@@ -268,7 +276,7 @@ Trabajamos para ser la tienda de tecnología líder a nivel local, conectándote
                   <label for="mensaje" class="form-label">Mensaje</label>
                   <textarea class="form-control" name="mensaje" id="mensaje" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg w-100">
+                <button type="submit" class="btn btn-primary btn-lg w-100" onclick="lanzarConfetti()">
                   <i class="bi bi-send"></i> Enviar Mensaje
                 </button>
               </form>
@@ -285,10 +293,6 @@ Trabajamos para ser la tienda de tecnología líder a nivel local, conectándote
         <div class="row">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
             <p class="mb-0">&copy; 2025 SmartMarket. Todos los derechos reservados.</p>
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <a href="#" class="text-white text-decoration-none me-3">Términos y Condiciones</a>
-            <a href="#" class="text-white text-decoration-none">Política de Privacidad</a>
           </div>
         </div>
       </div>
@@ -315,6 +319,22 @@ Trabajamos para ser la tienda de tecnología líder a nivel local, conectándote
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="galleryModalLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="galleryModalImg" src="" alt="" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

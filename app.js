@@ -425,6 +425,14 @@ function vaciar(){
 })
 }
 
+function lanzarConfetti() {
+    confetti({
+      particleCount: 200,
+      spread: 90,
+      origin: { y: 0.6 }
+    });
+  }
+
 function confirmarVenta(){
   Swal.fire({
   title: "¿Confirmar compra?",
@@ -439,7 +447,40 @@ function confirmarVenta(){
       title: "Compra realizada",
       text: "Gracias por tu compra.",
       icon: "success"
-    });
+    }).then(e=>{
+      if(e.isConfirmed){
+          lanzarConfetti();
+      }
+    })
   }
 })
 }
+
+// Delegación para abrir imagen en modal al hacer click en la galería
+document.addEventListener('click', (e) => {
+  // busca el contenedor de la imagen de galería (permite click en la imagen o en el overlay/ico)
+  const galleryItem = e.target.closest('.gallery-item') || (e.target.classList && e.target.classList.contains('gallery-image') && e.target);
+  if (!galleryItem) return;
+
+  // si es un element que contiene la imagen, extraer la <img>
+  const img = galleryItem.querySelector ? galleryItem.querySelector('img') : (e.target.matches && e.target.matches('img') ? e.target : null);
+  if (!img) return;
+
+  const modalImg = document.getElementById('galleryModalImg');
+
+  if (!modalImg) return;
+
+  // setear src y alt
+  modalImg.src = img.src;
+ 
+
+  
+
+  // mostrar modal usando API de bootstrap (ya cargado en index.html)
+  const modalEl = document.getElementById('galleryModal');
+  if (modalEl) {
+    const modal = new bootstrap.Modal(modalEl);
+    modal.show();
+  }
+});
+
