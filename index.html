@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -7,22 +7,33 @@
     <title>SmartMarket - Productos Electrónicos</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
 
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./hero.css" />
   </head>
   <body>
-   <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#inicio">
-          <img src="./img/logo.png" width="40" height="40" alt="">
-           SmartMarket
+          <img src="./img/logo.png" width="40" height="40" alt="" />
+          SmartMarket
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-center" id="navbarNav">
@@ -45,7 +56,13 @@
           </ul>
 
           <!-- Botón de carrito con contador -->
-          <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+          <button
+            class="btn btn-outline-light ms-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartOffcanvas"
+            aria-controls="cartOffcanvas"
+          >
             <i class="bi bi-cart3"></i>
             <span id="cart-count" class="badge bg-danger ms-1">0</span>
           </button>
@@ -55,50 +72,58 @@
 
     <!-- Inicio Section / Hero -->
     <section id="inicio" class="hero">
-        <div class="blob blob1"></div>
-        <div class="blob blob2"></div>
-        <div class="blob blob3"></div>
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
 
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="badge-custom">
-                    <span class="pulse-dot"></span>
-                    Nuevos productos disponibles
-                </div>
-                
-                <h1>
-                    La mejor tecnología<br>
-                    <span class="gradient-text">al mejor precio</span>
-                </h1>
-                
-                <p class="hero-description">
-                    Descubre nuestra colección de smartphones, consolas, laptops y más. 
-                    Envío gratis en compras superiores a $10,000.
-                </p>
-                
-                <div class="buttons">
-                    <button class="primary-btn" onclick="document.getElementById('productos').scrollIntoView({behavior: 'smooth'})">Ver productos</button>
-                </div>
-            </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="badge-custom">
+            <span class="pulse-dot"></span>
+            Nuevos productos disponibles
+          </div>
 
-            <div class="hero-image">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&h=900&fit=crop" alt="Productos electrónicos premium">
-                </div>
-                
-                <div class="floating-card card1">
-                    <div class="card-icon">📱</div>
-                    <div class="card-title">Smartphones</div>
-                    <div class="card-subtitle">Desde $5,000</div>
-                </div>
-                
-                <div class="floating-card card2">
-                    <div class="card-icon">🎮</div>
-                    <div class="card-title">Consolas Gaming</div>
-                    <div class="card-subtitle">Stock disponible</div>
-                </div>
-            </div>
+          <h1>
+            La mejor tecnología<br />
+            <span class="gradient-text">al mejor precio</span>
+          </h1>
+
+          <p class="hero-description">
+            Descubre nuestra colección de smartphones, consolas, laptops y más.
+            Envío gratis en compras superiores a $10,000.
+          </p>
+
+          <div class="buttons">
+            <button
+              class="primary-btn"
+              onclick="document.getElementById('productos').scrollIntoView({behavior: 'smooth'})"
+            >
+              Ver productos
+            </button>
+          </div>
         </div>
+
+        <div class="hero-image">
+          <div class="image-container">
+            <img
+              src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&h=900&fit=crop"
+              alt="Productos electrónicos premium"
+            />
+          </div>
+
+          <div class="floating-card card1">
+            <div class="card-icon">📱</div>
+            <div class="card-title">Smartphones</div>
+            <div class="card-subtitle">Desde $5,000</div>
+          </div>
+
+          <div class="floating-card card2">
+            <div class="card-icon">🎮</div>
+            <div class="card-title">Consolas Gaming</div>
+            <div class="card-subtitle">Stock disponible</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Quiénes Somos Section -->
@@ -114,30 +139,59 @@
         <div class="row mb-5">
           <div class="col-lg-6 mb-4">
             <div class="about-card h-100">
-              <h3 class="mb-3"><i class="bi bi-book text-primary"></i> Nuestra Historia</h3>
-              <p>SmartMarket se fundó con el objetivo de ofrecer tecnología de vanguardia (celulares, Xbox, PC, smartwatches) de forma fácil y confiable.
-
-Desde el inicio, priorizamos la Calidad y la Orientación al Cliente.
-
-Trabajamos para ser la tienda de tecnología líder a nivel local, conectándote siempre con la última innovación.</p>
+              <h3 class="mb-3">
+                <i class="bi bi-book text-primary"></i> Nuestra Historia
+              </h3>
+              <p>
+                SmartMarket se fundó con el objetivo de ofrecer tecnología de
+                vanguardia (celulares, Xbox, PC, smartwatches) de forma fácil y
+                confiable. Desde el inicio, priorizamos la Calidad y la
+                Orientación al Cliente. Trabajamos para ser la tienda de
+                tecnología líder a nivel local, conectándote siempre con la
+                última innovación.
+              </p>
             </div>
           </div>
           <div class="col-lg-6 mb-4">
             <div class="about-card h-100">
-              <h3 class="mb-3"><i class="bi bi-bullseye text-primary"></i> Misión</h3>
-              <p>Ofrecer una amplia gama de dispositivos eléctricos y tecnología de vanguardia, como celulares, consolas (Xbox), PC y smartwatches, asegurando productos de calidad y un servicio al cliente excepcional para conectar a nuestros clientes con las soluciones tecnológicas que mejoran su vida diaria y productividad.</p>
+              <h3 class="mb-3">
+                <i class="bi bi-bullseye text-primary"></i> Misión
+              </h3>
+              <p>
+                Ofrecer una amplia gama de dispositivos eléctricos y tecnología
+                de vanguardia, como celulares, consolas (Xbox), PC y
+                smartwatches, asegurando productos de calidad y un servicio al
+                cliente excepcional para conectar a nuestros clientes con las
+                soluciones tecnológicas que mejoran su vida diaria y
+                productividad.
+              </p>
             </div>
           </div>
           <div class="col-lg-6 mb-4">
             <div class="about-card h-100">
-              <h3 class="mb-3"><i class="bi bi-eye text-primary"></i> Visión</h3>
-              <p>Convertirnos en la tienda líder a nivel local en la comercialización de tecnología y dispositivos eléctricos, reconocida por la innovación, la calidad de nuestros productos y ser el referente de confianza para las necesidades tecnológicas de nuestros clientes.</p>
+              <h3 class="mb-3">
+                <i class="bi bi-eye text-primary"></i> Visión
+              </h3>
+              <p>
+                Convertirnos en la tienda líder a nivel local en la
+                comercialización de tecnología y dispositivos eléctricos,
+                reconocida por la innovación, la calidad de nuestros productos y
+                ser el referente de confianza para las necesidades tecnológicas
+                de nuestros clientes.
+              </p>
             </div>
           </div>
           <div class="col-lg-6 mb-4">
             <div class="about-card h-100">
-              <h3 class="mb-3"><i class="bi bi-people text-primary"></i> Nuestro Equipo</h3>
-              <p>Contamos con un equipo de 5 integrantes especializados en tecnología, ventas y servicio al cliente. Cada miembro está capacitado para brindar asesoramiento experto y garantizar que encuentres el producto perfecto para tus necesidades.</p>
+              <h3 class="mb-3">
+                <i class="bi bi-people text-primary"></i> Nuestro Equipo
+              </h3>
+              <p>
+                Contamos con un equipo de 5 integrantes especializados en
+                tecnología, ventas y servicio al cliente. Cada miembro está
+                capacitado para brindar asesoramiento experto y garantizar que
+                encuentres el producto perfecto para tus necesidades.
+              </p>
             </div>
           </div>
         </div>
@@ -158,11 +212,36 @@ Trabajamos para ser la tienda de tecnología líder a nivel local, conectándote
         <div class="row mb-4">
           <div class="col-12">
             <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-              <button class="btn btn-outline-primary filter-btn active" data-category="all">Todos</button>
-              <button class="btn btn-outline-primary filter-btn" data-category="celulares">Celulares</button>
-              <button class="btn btn-outline-primary filter-btn" data-category="laptops">Laptops</button>
-              <button class="btn btn-outline-primary filter-btn" data-category="consolas">Consolas</button>
-              <button class="btn btn-outline-primary filter-btn" data-category="pc">PC Gaming</button>
+              <button
+                class="btn btn-outline-primary filter-btn active"
+                data-category="all"
+              >
+                Todos
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                data-category="celulares"
+              >
+                Celulares
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                data-category="laptops"
+              >
+                Laptops
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                data-category="consolas"
+              >
+                Consolas
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                data-category="pc"
+              >
+                PC Gaming
+              </button>
             </div>
           </div>
         </div>
@@ -233,21 +312,40 @@ Trabajamos para ser la tienda de tecnología líder a nivel local, conectándote
                 <i class="bi bi-clock-fill text-primary"></i>
                 <div>
                   <h5>Horario</h5>
-                  <p>Lunes a Viernes: 9:00 AM - 7:00 PM<br>Sábados: 10:00 AM - 6:00 PM</p>
+                  <p>
+                    Lunes a Viernes: 9:00 AM - 7:00 PM<br />Sábados: 10:00 AM -
+                    6:00 PM
+                  </p>
                 </div>
               </div>
 
               <div class="social-links mt-4">
                 <h5 class="mb-3">Síguenos</h5>
-                <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="social-link"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
               </div>
 
               <!-- Mapa -->
               <div class="mt-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19167.891848865554!2d-102.31262395708674!3d22.14218615570277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429e2a188a3633b%3A0x68eef8a8151706d9!2sTelcel!5e0!3m2!1ses-419!2smx!4v1762555251303!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19167.891848865554!2d-102.31262395708674!3d22.14218615570277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429e2a188a3633b%3A0x68eef8a8151706d9!2sTelcel!5e0!3m2!1ses-419!2smx!4v1762555251303!5m2!1ses-419!2smx"
+                  width="100%"
+                  height="250"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -255,28 +353,67 @@ Trabajamos para ser la tienda de tecnología líder a nivel local, conectándote
           <div class="col-lg-6">
             <div class="contact-form-card h-100">
               <h3 class="mb-4">Envíanos un Mensaje</h3>
-              <form action="https://formspree.io/f/mqawzapa" method="POST">
+              <form
+                action="https://formspree.io/f/mqawzapa"
+                method="POST"
+              >
                 <div class="mb-3">
                   <label for="nombre" class="form-label">Nombre Completo</label>
-                  <input type="text" class="form-control" name="nombre" id="nombre" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="nombre"
+                    id="nombre"
+                    required
+                  />
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Correo Electrónico</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <label for="email" class="form-label"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    required
+                  />
                 </div>
                 <div class="mb-3">
                   <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="tel" class="form-control" name="telefono" id="telefono">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="telefono"
+                    maxlength="10"
+                    
+                  />
                 </div>
                 <div class="mb-3">
                   <label for="asunto" class="form-label">Asunto</label>
-                  <input type="text" class="form-control" name="asunto" id="asunto" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="asunto"
+                    id="asunto"
+                    required
+                  />
                 </div>
                 <div class="mb-3">
                   <label for="mensaje" class="form-label">Mensaje</label>
-                  <textarea class="form-control" name="mensaje" id="mensaje" rows="5" required></textarea>
+                  <textarea
+                    class="form-control"
+                    name="mensaje"
+                    id="mensaje"
+                    rows="5"
+                    required
+                  ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg w-100" onclick="lanzarConfetti()">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg w-100"
+                  onclick="lanzarConfetti()"
+                >
                   <i class="bi bi-send"></i> Enviar Mensaje
                 </button>
               </form>
@@ -292,17 +429,29 @@ Trabajamos para ser la tienda de tecnología líder a nivel local, conectándote
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <p class="mb-0">&copy; 2025 SmartMarket. Todos los derechos reservados.</p>
+            <p class="mb-0">
+              &copy; 2025 SmartMarket. Todos los derechos reservados.
+            </p>
           </div>
         </div>
       </div>
     </footer>
 
     <!-- Offcanvas del carrito -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartOffcanvas"
+      aria-labelledby="cartOffcanvasLabel"
+    >
       <div class="offcanvas-header">
         <h5 id="cartOffcanvasLabel" class="offcanvas-title">Tu Carrito</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="offcanvas-body d-flex flex-column">
         <div id="cart-items" class="list-group mb-3">
@@ -314,32 +463,56 @@ Trabajamos para ser la tienda de tecnología líder a nivel local, conectándote
             <strong>Total:</strong>
             <span id="cart-total">$0.00 MXN</span>
           </div>
-          <button id="checkout-btn" class="btn btn-primary w-100 mb-2">Ir a pagar</button>
-          <button id="clear-cart-btn" onclick="vaciar()" class="btn btn-outline-secondary w-100">Vaciar carrito</button>
+          <button id="checkout-btn" class="btn btn-primary w-100 mb-2">
+            Ir a pagar
+          </button>
+          <button
+            id="clear-cart-btn"
+            onclick="vaciar()"
+            class="btn btn-outline-secondary w-100"
+          >
+            Vaciar carrito
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-dark text-white">
-      <div class="modal-header border-0">
-        <h5 class="modal-title" id="galleryModalLabel"></h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body text-center">
-        <img id="galleryModalImg" src="" alt="" class="img-fluid rounded">
+    <div
+      class="modal fade"
+      id="galleryModal"
+      tabindex="-1"
+      aria-labelledby="galleryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="galleryModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="galleryModalImg" src="" alt="" class="img-fluid rounded" />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Main JS -->
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="./app.js"></script>
+    <script>
+      document.getElementById('form').addEventListener('submit',()=>{
+        document.getElementById('form').clear();
+      })
+    </script>
   </body>
 </html>
