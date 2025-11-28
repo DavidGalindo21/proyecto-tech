@@ -54,6 +54,10 @@ html {
   transform: translateX(-50%);
 }
 
+.footer-link::after{
+  background: transparent;
+}
+
 .nav-link:hover::after {
   width: 80%;
 }
