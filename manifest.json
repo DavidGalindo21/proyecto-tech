@@ -1,0 +1,27 @@
+{
+  "name": "Mi Aplicación PWA",
+  "short_name": "MiPWA",
+  "description": "Una aplicación progresiva de ejemplo.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6efd",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+
+  "icons": [
+  {
+    "src": "/img/logo.png",
+    "sizes": "171x158",
+    "type": "image/png"
+  },
+  {
+    "src": "/img/logo.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any maskable"
+  }
+]
+
+}
