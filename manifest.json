@@ -1,7 +1,7 @@
 {
-  "name": "Mi Aplicación PWA",
-  "short_name": "MiPWA",
-  "description": "Una aplicación progresiva de ejemplo.",
+  "name": "SmartMarket",
+  "short_name": "SmartMarket",
+  "description": "Una aplicación web progresiva para la venta de productos electrónicos.",
   "start_url": "/index.html",
   "scope": "/",
   "display": "standalone",
@@ -12,16 +12,15 @@
 
   "icons": [
   {
-    "src": "/img/logo.png",
-    "sizes": "171x158",
+    "src": "/img/logo_app.png",
+    "sizes": "512x512",
     "type": "image/png"
   },
   {
-    "src": "/img/logo.png",
+    "src": "/img/logo_app.png",
     "sizes": "512x512",
     "type": "image/png",
     "purpose": "any maskable"
   }
 ]
-
 }

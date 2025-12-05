@@ -50,6 +50,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#galeria">Galería</a>
             </li>
+               <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
@@ -443,17 +446,21 @@
                     class="form-control"
                     name="email"
                     id="email"
+                     maxlength="254"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     required
                   />
                 </div>
                 <div class="mb-3">
                   <label for="telefono" class="form-label">Teléfono</label>
                   <input
-                    type="number"
+                    type="tel"
                     class="form-control"
                     name="telefono"
-                    maxlength="10"
-                    
+                     maxlength="10"
+    inputmode="numeric"
+    pattern="[0-9]{10}"
+                    required
                   />
                 </div>
                 <div class="mb-3">
@@ -513,6 +520,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link footer-link" href="#galeria">Galería</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link footer-link" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link footer-link" href="#contacto">Contacto</a>
